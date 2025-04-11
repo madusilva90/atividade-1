@@ -1,0 +1,73 @@
+//adiciona no final da lista usa push
+let tarefas= ['Estudar','Lavar a louça','Fazer exercicios']
+tarefas.push('Comprar pão','Ler um livro');
+console.log(tarefas)
+
+//remover a ultima tarefa da lista e salvar em uma variavel chamada ultima Tarefa, pop é usado para remover o ultimo item da lista
+let tarefas1 = ['Estudar', 'Lavar a louça', 'Fazer exercicios'];
+let ultimaTarefa = tarefas1.pop();
+console.log(tarefas1); 
+console.log(ultimaTarefa);
+
+//unshift é usado para adicionar algo no inicio da lista
+let tarefas2= ['Estudar','Lavar a louça','Fazer exercicios']
+tarefas2.unshift('Tomar café','Acordar cedo');
+console.log(tarefas2)
+
+//shift é usado para remover o primeiro item da lista, exercicio para remover o primeiro item e salva-lo em uma variavel chamada primeiratarefa 
+let tarefas3 = ['Estudar', 'Lavar a louça', 'Fazer exercicios'];
+let primeiratarefa = tarefas3.shift();
+console.log(tarefas3); 
+console.log(primeiratarefa)
+
+//splice tira e coloca itens na lista,os números são os indices do que voce quer tirar e substituir 
+let tarefas4 = ['Estudar', 'Lavar a louça', 'Fazer exercicios'];
+tarefas4.splice(0,2, 'Fazer café da manhã','Organizar a mesa');
+console.log(tarefas4)
+
+// slice seleciona os elementos da lista segundo o indice 
+let tarefas5 = ['Estudar', 'Lavar a louça', 'Fazer exercicios','Ler um livro','pintar','bordar'];
+let tarefasSelecionadas=tarefas5.slice(1,4)
+console.log(tarefasSelecionadas)
+
+//concat junta arrays ou seja junta duas listas
+let tarefas6= ['Estudar', 'Lavar a louça', 'Fazer exercicios','Ler um livro','pintar','bordar'];
+let tarefas7= ['Ver um filme','Descansar']
+let tarefascompletas= tarefas6.concat(tarefas7)
+console.log(tarefascompletas)
+
+//função que soma dois numeros 
+function somar (a,b){
+  return a + b
+}
+console.log(somar(5,3))
+// função que retorna par ou impar
+function parOuimpar(numero){
+  return numero % 2 === 0? 'Par' : 'Impar';
+}
+console.log(parOuimpar(4))
+// função que recebe um nome e retorna uma saudação personalizada
+function saudacao(nome){
+  return `Olá, ${nome}!`;
+}
+console.log(saudacao("Carlos")); 
+console.log(saudacao("Ana"));
+
+//typeoff retorna se é uma string um número ou boleana exemplo:
+let idade=19
+console.log(typeof idade)
+
+let nome= ('Ester')
+console.log(typeof nome)
+
+let booleana= false
+console.log (typeof booleana)
+
+// diferença entre var let e const:
+//var: Cria uma variável com alcance de função. Você pode mudar o valor dela e até declarar de novo no mesmo lugar.
+//let: Cria uma variável com alcance de bloco (dentro de chaves). Você pode mudar o valor dela, mas não pode declarar a mesma variável de novo no mesmo lugar.
+//const: Cria uma variável com alcance de bloco. O valor dela não pode ser mudado depois que for definido, e você não pode declarar a mesma variável de novo.
+
+// o que acontece quando voce tenta acessar uma variável que ainda não foi definida?
+//var: A variável pode ser acessada antes da definição, mas o valor será indefinido.
+//let e const: Causa um erro se você tentar acessar a variável antes de ela ser definida.
