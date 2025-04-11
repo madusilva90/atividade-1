@@ -71,3 +71,31 @@ console.log (typeof booleana)
 // o que acontece quando voce tenta acessar uma variável que ainda não foi definida?
 //var: A variável pode ser acessada antes da definição, mas o valor será indefinido.
 //let e const: Causa um erro se você tentar acessar a variável antes de ela ser definida.
+
+// objeto criado com as propriedades e depois exibido no console
+const carro= {
+  marca: "Toyota",
+  modelo: 16,
+  ano: 2020,
+}
+console.log(carro.marca)
+console.log(carro.modelo)
+console.log(carro.ano)
+
+// para deletar algum elemento é só usar o delet nesse caso o email foi deletado
+const usuario = {
+    nome: "Fernanda",
+    email: "fernanda@email.com",
+    idade: 25
+};
+delete usuario.email;
+
+console.log(usuario);
+
+// para alterar algum elemento basta colocar em baixo das chaves o nome do objeto, nesse caso era pessoa e em seguida ponto final e o nome do elemento que voce deseja alterar 
+const pessoa = {
+    nome: "Carlos",
+    idade: 29
+};
+pessoa.idade = 31;
+console.log(pessoa.idade);
