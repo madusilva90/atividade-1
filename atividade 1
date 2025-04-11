@@ -41,11 +41,13 @@ function somar (a,b){
   return a + b
 }
 console.log(somar(5,3))
+
 // função que retorna par ou impar
 function parOuimpar(numero){
   return numero % 2 === 0? 'Par' : 'Impar';
 }
 console.log(parOuimpar(4))
+
 // função que recebe um nome e retorna uma saudação personalizada
 function saudacao(nome){
   return `Olá, ${nome}!`;
@@ -82,7 +84,7 @@ console.log(carro.marca)
 console.log(carro.modelo)
 console.log(carro.ano)
 
-// para deletar algum elemento é só usar o delet nesse caso o email foi deletado
+// para deletar algum elemento é só usar o delete nesse caso o email foi deletado
 const usuario = {
     nome: "Fernanda",
     email: "fernanda@email.com",
